@@ -4,6 +4,7 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import PaymentIcon from '@mui/icons-material/Payment';
 import StoreIcon from '@mui/icons-material/Store';
+import CategoryIcon from '@mui/icons-material/Category';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LogoutSharpIcon from '@mui/icons-material/LogoutSharp';
 
@@ -40,6 +41,12 @@ const Sidebar = () => {
         <StoreIcon className="icon" />
         <span>Orders</span>
       </li>
+      <Link to="/categories">
+      <li>
+        <CategoryIcon className="icon" />
+        <span>Categories</span>
+      </li>
+      </Link>
       <p className="title">USER</p>
       <li>
         <AccountCircleIcon className="icon"/>

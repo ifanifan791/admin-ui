@@ -4,6 +4,7 @@ import Login from "./pages/login/Login";
 import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
+import Mylist from "./pages/Mylist/Mylist";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { productInputs, userInputs } from "./formsource";
 
@@ -15,6 +16,7 @@ function App() {
           <Route path="/">
             <Route index element={<Home />}></Route>
             <Route path="login" element={<Login />}></Route>
+            <Route path="categories" element={<Mylist />}></Route>
             <Route path="users">
               <Route index element={<List />}></Route>
               <Route path=":userId" element={<Single />}></Route>
