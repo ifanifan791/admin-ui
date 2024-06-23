@@ -34,26 +34,26 @@ const rows = [
   { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
 ];
 
-const actionColumn = [
-  {
-    field: "action",
-    headerName: "Action",
-    width: 200,
-    renderCell: () => {
-      return (
-        <div className="cellAction">
-          <Link to={"/" + type + "/test"} style={{ textDecoration: "none" }}>
-            <span className="viewButton">View</span>
-          </Link>
-        </div>
-      );
-    },
-  },
-];
-
 const Datatable = () => {
   const location = useLocation();
   const type = location.pathname.split('/')[1];
+
+  const actionColumn = [
+    {
+      field: "action",
+      headerName: "Action",
+      width: 200,
+      renderCell: () => {
+        return (
+          <div className="cellAction">
+            <Link to={"/" + type + "/test"} style={{ textDecoration: "none" }}>
+              <span className="viewButton">View</span>
+            </Link>
+          </div>
+        );
+      },
+    },
+  ];  
 
   return (
     <div className="datatable">
