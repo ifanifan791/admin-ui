@@ -4,7 +4,7 @@ import Login from "./pages/login/Login";
 import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
-import MyList from "./pages/mylist/MyList"
+import MyList from "./pages/mylist/MyList";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { productInputs, userInputs, categoryInputs } from "./formsource";
 import "./components/style/dark.scss";
