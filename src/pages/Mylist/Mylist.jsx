@@ -4,7 +4,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Widget from "../../components/widget/Widget";
 import Datatable from "../../components/datatable/Datatable";
 
-const MyList = ({columns}) => {
+const Mylist = ({columns}) => {
   return (
     <div className="mylist">
       <Sidebar />
@@ -24,4 +24,4 @@ const MyList = ({columns}) => {
   );
 };
 
-export default MyList;
+export default Mylist;
