@@ -31,4 +31,19 @@
         margin-top: 10px;
       }
     }
+
+    .items {
+      display: flex;
+      align-items: center;
+
+      .item {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .icon {
+          font-size: 25px;
+        }
+    }
+  }
 }

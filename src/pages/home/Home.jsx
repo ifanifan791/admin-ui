@@ -12,9 +12,8 @@ const Home = () => {
         <Navbar />
         <div className="widgets">
           <Widget type="user"/>
-          <wWdget type="order"/>
-          <Widget type="earning"/>
-          <Widget type="balance"/>
+          <Widget type="product"/>
+          <Widget type="category"/>
         </div>
         <div className="charts">
           <Chart type="order" aspect={2 / 1} />
